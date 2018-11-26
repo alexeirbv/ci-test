@@ -22,7 +22,7 @@ jobs:
 
       - run:
           name: run main
-          command: pyton test.py
+          command: python test.py
 
       - store_artifacts:
           path: test-reports
