@@ -10,5 +10,8 @@ workflows:
   version: 2
   build:
     jobs:
-      - build:
+      - hold:
           type: approval
+      - build:
+          requires:
+            - hold
