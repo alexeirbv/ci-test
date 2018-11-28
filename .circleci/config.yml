@@ -9,10 +9,9 @@ jobs:
 workflows:
   version: 2
   my-workflow:
-    build:
-      jobs:
-        - hold:
-            type: approval
-        - build:
-            requires:
-              - hold
+    jobs:
+      - hold:
+          type: approval
+      - build:
+          requires:
+            - hold
