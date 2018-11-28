@@ -20,4 +20,4 @@ workflows:
             - hold
       - job2:
           requires:
-            - job2
+            - hold
